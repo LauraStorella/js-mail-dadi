@@ -1,5 +1,4 @@
-// START Program
-
+// START Program - Verifica Mail
 // Creo array - richiesta mail utente
 var userMail = [];
 
@@ -25,7 +24,34 @@ for (var i = 0; i < userMail.length; i++) {
 // Display risultati
 console.log('Valore inziale:', lauraMail);
 if (lauraMail) {
-  console.log('Stato indirizzo mail ' + lauraMail + ' : in elenco');
+  console.log('Stato indirizzo mail', lauraMail, ':in elenco');
 } else {
-  console.log('Stato indirizzo mail ' + lauraMail + ' : da richiedere');
+  console.log('Stato indirizzo mail', lauraMail, ':da richiedere');
 }
+// END Program - Verifica Mail
+
+
+
+
+
+
+
+// START Program - Gioco Dadi
+// Creo var richiesta numero utente e pc
+var userName = prompt('Inserisci il tuo nome');
+console.log(userName);
+var userNumber = parseInt(prompt('Inserisci un numero da 1 a 6'));
+console.log(userNumber);
+
+var pcNumber = Math.floor(Math.random()*6) +1;
+console.log(pcNumber);
+
+//Creo condizioni: user wins - pc wins - pareggio
+if (userNumber > pcNumber) {
+  alert('The winner is ' + userName + '!');
+} else if (userNumber < pcNumber) {
+  alert('Sorry ' + userName + ', you failed. Try again!');
+} else if (userNumber == pcNumber){
+  alert('Tie! Try again!')
+}
+// END Program - Gioco Dadi
